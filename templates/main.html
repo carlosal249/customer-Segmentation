@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-br">
+<style>
+#forms{
+    padding: 30, 0;
+
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#card-result{
+ text-align: center;
+}
+#resultado{
+    padding: 30, 0;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#pp {
+  font-weight: 900;
+  letter-spacing: 0px;
+  position: relative;
+  font-size: 15px;
+  padding: 2px 5px;
+}
+
+#titulo{
+  padding: 5px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#text{
+  padding: 5px;
+  
+}
+</style>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>SpaceDog.inc</title>
+    </head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Navbar text with an inline element
+          </span>
+        </div>
+      </nav>
+
+      <div id="wrapper" class="animate">
+      <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
+        
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav animate side-nav">
+            
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div id = forms>
+        <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Customer Segmentation</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">O Knn usa o principio de 'clusterisaçao', para separar os dados em grupo por meio de aprendizado nao supervisionado!</h6>
+                  <form action="{{ url_for('main') }}" method="POST">
+                    <div class="form-group">
+                      <label for="Genero">Genero</label>
+                      <input type="number" class="form-control" id="Genero" name="Genero" placeholder="1">
+                    </div>
+                    <div class="form-group">
+                      <label for="Idade">Idade</label>
+                      <input type="number" class="form-control" id="Idade" name ="Idade" placeholder="25">
+                    </div>
+                    <div class="form-group">
+                        <label for="RendaAnual">Renda Anual</label>
+                        <input type="number" class="form-control" id="RendaAnual" name ="RendaAnual" placeholder="15-130">
+                    </div>
+                    <div class="form-group">
+                        <label for="Pontuacao">Pontuação</label>
+                        <input type="number" class="form-control" id="Pontuacao" name ="Pontuacao" placeholder="0-100">
+                    </div>
+                    <div class="form-check">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Prever</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% if y_pred %}
+        <div id="resultado">
+            <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body" id="card-result">
+                        <h2 id='resultado'>Grupo Previsto: {{(y_pred)}}</h2>
+                        {% if y_pred == 0 %}
+                        <h2 id='resultado'>Grupo Previsto: {{(y_pred)}}</h2>
+                        {% endif %}
+                        {% if y_pred == 2 %}
+                        <p id="pp">Grupo Pouco Explorado!</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+        {% endif %} 
+            <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" id="titulo">Grupo 0</h5>
+                <p class="card-text" id="text">Renda Alta</p>
+                <p class="card-text" id="text">Pontuação Alta</p>
+                <p class="card-text" id="text">20-68 Anos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" id="titulo">Grupo 1</h5>
+                <p class="card-text" id="text">Renda Media</p>
+                <p class="card-text" id="text">Pontuação Media-Alta</p>
+                <p class="card-text" id="text">18-70 Anos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" id="titulo">Grupo 2</h5>
+                <p class="card-text" id="text">Renda Alta</p>
+                <p class="card-text" id="text">Pontuação Media-Baixa</p>
+                <p class="card-text" id="text">18-60 Anos</p>
+                <p id="pp"> Pontecial </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" id="titulo">Grupo 3</h5>
+                <p class="card-text" id="text">Renda Baixa</p>
+                <p class="card-text" id="text">Pontuação  Alta</p>
+                <p class="card-text" id="text"> 18-35 Anos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" id="titulo">Grupo 4</h5>
+                <p class="card-text" id="text">Renda Baixa</p>
+                <p class="card-text" id="text">Pontuação Media-Baixa</p>
+                <p class="card-text" id="text">20-68 Anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+</body>
+</html>
