@@ -35,4 +35,4 @@ so after we separate customers into groups based on their characteristics, which
 which groups are unlikely to spend more?(0, 3)
 
 
-## I have also created a flask integration for presentation pourposes, feel free to use it too
+* note: in the .ipynb file is the data exploration, and the knn.py and the templates folders are for flask integration for presentation pourposes  *
