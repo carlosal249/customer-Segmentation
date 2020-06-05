@@ -33,3 +33,6 @@ Average Low Score
 
 so after we separate customers into groups based on their characteristics, which groups could spend more? (1, 2, 4)
 which groups are unlikely to spend more?(0, 3)
+
+
+# I have also created a flask integration for presentation pourposes, feel free to use it too
