@@ -35,4 +35,4 @@ so after we separate customers into groups based on their characteristics, which
 which groups are unlikely to spend more?(0, 3)
 
 
-# I have also created a flask integration for presentation pourposes, feel free to use it too
+## I have also created a flask integration for presentation pourposes, feel free to use it too
