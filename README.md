@@ -2,6 +2,9 @@
 Unsupervised Learning
 In this project I used a Mall database from kaggle, to create a model for customer-Segmentation, the data contains 5 variables (Gender, Id, Age, AnnualIncome, SpendingScore), where spending Score is a metric Score assigned by the mall based on customer behavior and spending nature
 
+
+![Main](https://github.com/carlosal249/customer-Segmentation/blob/master/head.png)
+
 the main goal of this project is to divide customers into groups, to extract insights such as: Do we have any standards within the customers who spend the most on the market ?, Do we have any group standards that could be further explored?
 
 and after analysing and creating the model i found 5 Major groups:
@@ -35,4 +38,6 @@ so after we separate customers into groups based on their characteristics, which
 which groups are unlikely to spend more?(0, 3)
 
 
-* note: in the .ipynb file is the data exploration, and the knn.py and the templates folders are for flask integration for presentation pourposes
+
+
+* note: in the .ipynb file is the data exploration, and the app.py and the templates folders are for flask integration for presentation pourposes
