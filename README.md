@@ -40,4 +40,4 @@ which groups are unlikely to spend more?(0, 3)
 
 
 
-* note: in the .ipynb file is the data exploration, and the app.py and the templates folders are for flask integration for presentation pourposes
+* note: in the .ipynb file is the data exploration, and the app.py and the templates folders are for flask integration for presentation purposes
