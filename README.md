@@ -1,5 +1,5 @@
 <h1 align=center> Customer-Segmentation </h1>
-<h3 align=center> Why customer Segmentation matters?</h3>
+<h3> Why customer Segmentation matters?</h3>
 
 The importance of market segmentation is that it allows a business to <b>precisely</b> reach a consumer with specific needs and wants. In the long run, this <b>benefits</b> the company because they are able to use their corporate <b>resources more effectively</b> and make better strategic marketing decisions!.
 
@@ -13,7 +13,7 @@ In this project I used a Mall database from kaggle, to create a model for custom
 ![Main](https://github.com/carlosal249/customer-Segmentation/blob/master/head.png)
 * note: in the Customer Segmentation.ipynb file is the data exploration and the model, the app.py and the templates folders are for flask(api) integration for presentation an deploy purposes
 
-<h3 align=center> After creating and analysing the model I found 5 Major groups:</h3>
+<h3> After creating and analysing the model I found 5 Major groups:</h3>
 
 <ul> GROUP 0:</br>   	  
  <li> High Income </li>
@@ -47,7 +47,9 @@ In this project I used a Mall database from kaggle, to create a model for custom
 
 <h3 align=center> Conclusion: </h3>
 after we separate customers into groups based on their characteristics
-do we have groups who could <b>spend</b> more ? </br>
-Yes, groups 1 and 2 could spend more </br>
-which groups are unlikely to spend more?</br>
-probably groups 0 and 3</br>
+<p> do we have groups who could <b>spend</b> more ?</p> 
+ - Yes, groups 1 and 2 could spend more 
+<p> Do we have any standards within the customers who spend the most on the market ?</p>
+ - Yes we managed to separate customers by standards! 
+<p> which groups are unlikely to spend more?</p>
+ - Probably groups 0 and 3
