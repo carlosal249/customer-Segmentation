@@ -1,5 +1,5 @@
-# Customer-Segmentation
-<h3> Why customer Segmentation matters?</h3>
+<h1 align=center> Customer-Segmentation </h1>
+<h3 align=center> Why customer Segmentation matters?</h3>
 
 The importance of market segmentation is that it allows a business to <b>precisely</b> reach a consumer with specific needs and wants. In the long run, this <b>benefits</b> the company because they are able to use their corporate <b>resources more effectively</b> and make better strategic marketing decisions!.
 
@@ -11,40 +11,41 @@ the main goal of this project is to separate customers into groups, to extract i
 In this project I used a Mall database from kaggle, to create a model for customer-Segmentation, the data contains 5 variables (Gender, Id, Age, AnnualIncome, SpendingScore), where spending Score is a metric Score assigned by the mall based on customer behavior and spending nature
 
 ![Main](https://github.com/carlosal249/customer-Segmentation/blob/master/head.png)
-* note: in the .ipynb file is the data exploration, and the app.py and the templates folders are for flask(api) integration for presentation purposes
+* note: in the Customer Segmentation.ipynb file is the data exploration and the model, the app.py and the templates folders are for flask(api) integration for presentation an deploy purposes
 
-and after creating and analysing the model I found 5 Major groups:
+<h3 align=center> After creating and analysing the model I found 5 Major groups:</h3>
 
 <ul> GROUP 0:</br>   	  
- <li>:moneybag: High Income </li>
- <li>:100: High Score </li>
- <li>:underage: 20-68 Years </li>
+ <li> High Income </li>
+ <li> High Score </li>
+ <li> 20-68 Years </li>
 </ul>
 
 <ul> GROUP 1:</br>
- <li>:moneybag: Average income </li>
- <li>:100: Average High Score </li>
- <li>:underage: 18-70 Years </li>
+ <li> Average income </li>
+ <li> Average High Score </li>
+ <li> 18-70 Years </li>
 </ul>
 
 <ul> GROUP 2:</br>
- <li>:moneybag: High Income</li>
- <li>:100: Average Low Score </li>
- <li>:underage: 18-60 Years </li>
+ <li> High Income</li>
+ <li> Average Low Score </li>
+ <li> 18-60 Years </li>
 </ul>
 
 <ul> GROUP_3:</br>
- <li>:moneybag: Low Income </li>
- <li>:100: High Score </li>
- <li>:underage: 18-35 Years </li>
+ <li> Low Income </li>
+ <li> High Score </li>
+ <li> 18-35 Years </li>
 </ul>
 
 <ul> GROUP 4:</br>
-<li>:moneybag: Low Income </li>
-<li>:100: Average Low Score </li>
-<li>:underage: 20-68 Years </li>
+<li> Low Income </li>
+<li> Average Low Score </li>
+<li> 20-68 Years </li>
 </ul>
-  
+
+<h3 align=center> Conclusion: </h3>
 after we separate customers into groups based on their characteristics
 do we have groups who could <b>spend</b> more ? </br>
 Yes, groups 1 and 2 could spend more </br>
