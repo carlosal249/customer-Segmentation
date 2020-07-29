@@ -15,35 +15,13 @@ In this project I used a Mall database from kaggle, to create a model for custom
 
 <h3> After creating and analysing the model I found 5 Major groups:</h3>
 
-<ul> GROUP 0:</br>   	  
- <li> High Income </li>
- <li> High Score </li>
- <li> 20-68 Years </li>
-</ul>
-
-<ul> GROUP 1:</br>
- <li> Average income </li>
- <li> Average High Score </li>
- <li> 18-70 Years </li>
-</ul>
-
-<ul> GROUP 2:</br>
- <li> High Income</li>
- <li> Average Low Score </li>
- <li> 18-60 Years </li>
-</ul>
-
-<ul> GROUP_3:</br>
- <li> Low Income </li>
- <li> High Score </li>
- <li> 18-35 Years </li>
-</ul>
-
-<ul> GROUP 4:</br>
-<li> Low Income </li>
-<li> Average Low Score </li>
-<li> 20-68 Years </li>
-</ul>
+|Group|Income|Score|Age|
+| -------- | -------- | -------- |-------- |
+|GROUP 0|High Income|High score|20-68|
+|GROUP 1|Average income|Average High Score|18-70|
+|GROUP 2|High Income|Average Low Score|18-60|
+|GROUP 3|Low Income|High score|18-35|
+|GROUP 4|Low Income|Average Low Score|20-68|
 
 <h3 align=center> Conclusion: </h3>
 <p>After we separate customers into groups based on their characteristics</p>
