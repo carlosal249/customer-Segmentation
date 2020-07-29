@@ -47,9 +47,9 @@ In this project I used a Mall database from kaggle, to create a model for custom
 
 <h3 align=center> Conclusion: </h3>
 after we separate customers into groups based on their characteristics
-<p> do we have groups who could <b>spend</b> more ?</p> 
- - Yes, groups 1 and 2 could spend more 
-<p> Do we have any standards within the customers who spend the most on the market ?</p>
- - Yes we managed to separate customers by standards! 
-<p> which groups are unlikely to spend more?</p>
- - Probably groups 0 and 3
+<p> do we have groups who could <b>spend</b> more ? </br>
+Yes, groups 1 and 2 could spend more</p>
+<p> Do we have any standards within the customers who spend the most on the market ? </br>
+ Yes we managed to separate customers by standards!</p>
+<p> which groups are unlikely to spend more?</br>
+ Probably groups 0 and 3</p>
