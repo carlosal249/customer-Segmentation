@@ -3,6 +3,8 @@
 
 The importance of market segmentation is that it allows a business to <b>precisely</b> reach a consumer with specific needs and wants. In the long run, this <b>benefits</b> the company because they are able to use their corporate <b>resources more effectively</b> and make better strategic marketing decisions!.
 
+![imagem](https://github.com/carlosal249/customer-Segmentation/blob/master/rfm_model.png)
+
 the main goal of this project is to separate customers into groups, to extract insights such as: 
 <ul>
 <li>Do we have any standards within the customers who spend the most on the market ?</li>
